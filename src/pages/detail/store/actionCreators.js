@@ -16,6 +16,7 @@ const changeDetail=(title,content,number,time,word,look,good,talk,money,article1
     article2,
     read2
 })
+
 export const getDetail=(id)=>{
     return (dispatch)=>{
         axios.get('/api/detail.json?id='+id).then((res)=>{
