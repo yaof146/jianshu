@@ -1,0 +1,7 @@
+export const CHANGE_LOGIN='login/CHANGE_LOGIN'
+export const LOGOUT='login/LOGOUT'
+export const CHANGE_INPUT='login/CHANGE_INPUT'
+export const SHOW_CODE='login/SHOW_CODE'
+export const SEND='login/SEND'
+export const CHANGE_REGISTER='login/CHANGE_REGISTER'
+export const TOGGLE_PAGE='login/TOGGLE_PAGE'

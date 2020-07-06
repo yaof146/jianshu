@@ -1,0 +1,58 @@
+{
+  "id": "1864755",
+  "name": "jianshu",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "简书的iconfont仓库",
+  "glyphs": [
+    {
+      "icon_id": "717670",
+      "name": "评论",
+      "font_class": "pinglun",
+      "unicode": "e717",
+      "unicode_decimal": 59159
+    },
+    {
+      "icon_id": "1595690",
+      "name": "心",
+      "font_class": "xin",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "8238040",
+      "name": "钻石",
+      "font_class": "zuanshi",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "401103",
+      "name": "spin",
+      "font_class": "spin",
+      "unicode": "e851",
+      "unicode_decimal": 59473
+    },
+    {
+      "icon_id": "1621077",
+      "name": "Aa",
+      "font_class": "Aa",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "14421735",
+      "name": "放大镜",
+      "font_class": "fangdajing_huaban1",
+      "unicode": "e682",
+      "unicode_decimal": 59010
+    },
+    {
+      "icon_id": "14930333",
+      "name": "Pens羽毛笔",
+      "font_class": "Pensyumaobi",
+      "unicode": "e708",
+      "unicode_decimal": 59144
+    }
+  ]
+}
