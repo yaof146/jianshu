@@ -23,7 +23,7 @@ const defaultState={
     status2:"unable",
     loginPage:"hide",
     registerPage:"show",
-    color:"red"
+    color:"red",
 }
 export default (state=defaultState,action)=>{
     switch (action.type){

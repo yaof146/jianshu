@@ -9,6 +9,7 @@ import {
     LoadMore,
     
 } from '../style'
+
 class List extends PureComponent{
     render(){
         const {list,getMoreList,page} =this.props;
@@ -60,4 +61,5 @@ const mapDispatch=(dispatch)=>({
         dispatch(actionCreators.getMoreList(page));
     }
 })
+
 export default connect(mapState,mapDispatch)(List)

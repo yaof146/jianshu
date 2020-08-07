@@ -3,16 +3,71 @@
     "data":{
         "authorList":[{
             "id":1,
-            "number":12
+            "number":12,
+            "word":"关注"
         },{
             "id":2,
-            "number":34
+            "number":34,
+            "word":"粉丝"
         },{
             "id":3,
-            "number":1234
+            "number":1234,
+            "word":"文章"
         },{
             "id":4,
-            "number":65
-        }]
+            "number":83475843,
+            "word":"字数"
+        },{
+            "id":5,
+            "number":32456,
+            "word":"收获喜欢"
+        },{
+            "id":6,
+            "number":8746,
+            "word":"总资产"
+        }],
+        "acticleList":[
+            {
+                "id":1,
+                "title":"《三十而已》被小三的王漫妮，多少钱可以认清男人的渣？",
+                "imgURL":"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1830914723,3154965800&fm=26&gp=0.jpg",
+                "content":"《三十而已》是最近最火爆的电视剧了，上次写过顾佳的完美主妇背着限量铂金包的女人...",
+                "star":12,
+                "talk":324,
+                "look":432,
+                "like":12566,
+                "time":"07.22 13:25"
+            },{
+                "id":2,
+                "title":"浪姐的变味，从请了101美少女的修图师开始......",
+                "imgURL":"https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3008142408,2229729459&fm=26&gp=0.jpg",
+                "content":"2020最火的综艺，绝对是《乘风破浪的姐姐》，不接受议价和讨论。 一群30+到...",
+                "star":12,
+                "talk":324,
+                "look":432,
+                "like":12566,
+                "time":"07.22 13:25"
+            },{
+                "id":3,
+                "title":"背着限量铂金包的女人，你们怎么还要她独立？",
+                "imgURL":"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2229864841,4232235061&fm=26&gp=0.jpg",
+                "content":"最近爆出了个很好看的新剧《三十而已》，童谣出演了一个精英阶层的全职太太，叫做“...",
+                "star":12,
+                "talk":324,
+                "look":432,
+                "like":12566,
+                "time":"07.22 13:25"
+            },{
+                "id":4,
+                "title":"14年后我终于明白：巴黎女人的高级美，全都在这4点精髓",
+                "imgURL":"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2458227883,4095122505&fm=26&gp=0.jpg",
+                "content":"有个女朋友给我一本正经地说：“等我老了，我一定要搬去巴黎。” 我很是惊讶：“为...",
+                "star":12,
+                "talk":324,
+                "look":432,
+                "like":12566,
+                "time":"07.22 13:25"
+            }
+        ]
     }
 }

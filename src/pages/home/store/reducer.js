@@ -135,16 +135,19 @@ const changeHomeData=(state,action)=>{
 }
 export default (state=defaultState,action)=>{
     switch(action.type){
-        case constants.MOUSE_ENTER_TWO : return state.set('mouseIn2',true);
-        case constants.MOUSE_LEAVE_TWO : return state.set('mouseIn2',false);
+        case constants.MOUSE_ENTER_TWO : 
+            return state.set('mouseIn2',true);
+        case constants.MOUSE_LEAVE_TWO : 
+            return state.set('mouseIn2',false);
         case constants.CHANGE_HOME_DATA : 
             return changeHomeData(state,action);
         case constants.ADD_ARTICLE_LIST : 
-        return state.merge({
-            "articleList":state.get("articleList").concat(action.list),
-            "articlePage":action.nextPage
-        })
-        case constants.TOGGLE_TOP_SHOW : return state.set('showScroll',action.show)
+            return state.merge({
+                "articleList":state.get("articleList").concat(action.list),
+                "articlePage":action.nextPage
+            })
+        case constants.TOGGLE_TOP_SHOW : 
+            return state.set('showScroll',action.show)
         default : 
             return state;
     }

@@ -5,6 +5,12 @@ export const HeaderWrapper =styled.div`
     position:relative;
     height:56px;
     border-bottom:1px solid #f0f0f0;
+    .listed{
+        height:100%;
+    }
+    .unlisted{
+        height:100%;
+    }
 `
 export const Logo=styled.div`
     position:absolute;
@@ -22,6 +28,9 @@ export const Nav=styled.div`
     margin:0 auto;
     padding-right:70px;
     box-sizing:border-box;
+    &.login{
+        padding-right:0;
+    }
 `
 export const NavItem=styled.div`
     line-height:56px;
@@ -34,9 +43,56 @@ export const NavItem=styled.div`
     &.right{
         float:right;
         color:#969696;
+        
     }
     &.active{
         color:#ea6f5a;
+    }
+    &.headSculpture{
+        width: 40px;
+        height: 40px;
+        padding: 8px 24px 8px 16px;
+        position:relative;
+        img{
+            width:100%;
+            height:100%;
+            border-radius:50%;
+        }
+    }
+    &.bgcolor{
+        background:#ccc;
+    }
+    div{
+        background:#fff;
+        position:absolute;
+        top:100%;
+        left:0;
+        box-shadow:0 2px 8px rgba(0,0,0,.1);
+        border-top:1px solid #f0f0f0;
+        min-width:160px;
+        li{
+            box-sizing: border-box;
+            padding: 0 27px;
+            i{
+                font-size:22px;
+                margin-right:10px;
+                color:#ea6f5a;
+            }
+            span{
+                font-size:14px;
+                color:#333;
+                text-align:left;
+            }
+        }
+        li:hover{
+            background:#ccc;
+        }
+        &.show{
+            display:block;
+        }
+        &.hide{
+            display:none;
+        }
     }
 `
 export const NavSearch=styled.input.attrs({

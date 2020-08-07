@@ -9,6 +9,7 @@ import Login from './pages/login'
 import Write from './pages/write'
 import DownLoad from './pages/download'
 import Author from './pages/author'
+import Concern from './pages/concern'
 function App() {
   return (
     <Provider store={store}>
@@ -21,6 +22,7 @@ function App() {
             <Route path='/detail/:id' exact component={Detail}></Route>
             <Route path='/download' exact component={DownLoad}></Route>
             <Route path='/author' exact component={Author}></Route>
+            <Route path='/concern' exact component={Concern}></Route>
           </div>
         </BrowserRouter>
     </Provider>

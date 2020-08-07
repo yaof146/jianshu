@@ -32,3 +32,21 @@ export const getList=()=>{
         })
     }
 }
+export const personMenuShow = () => ({
+    type:constants.PERSONMENUSHOW
+})
+export const personMenuHide = () => ({
+    type:constants.PERSONMENUHIDE
+})
+export const targle1 = () => ({
+    type:constants.TARGLE1,
+})
+export const targle2 = () => ({
+    type:constants.TARGLE2,
+})
+export const targle3 = () => ({
+    type:constants.TARGLE3,
+})
+export const bankToUnlist = () => ({
+    type:constants.BANK_TO_UNLIST,
+})

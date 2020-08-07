@@ -9,23 +9,50 @@ import {
     Name,
     Focus,
     AuthorList,
-    AuthorItem
+    AuthorItem,
+    Article,
+    Menu,
+    ArticleList,
+    ArticleItem,
+
 }from './style'
+
 class Author extends Component{
-    add2(){
-        const { authorList }  = this.props;
-        console.log("aaa");
-        console.log(authorList)
-        // authorList.map((item)=>{
-        //     return (<AuthorItem key={item.get("id")}>
-        //             <span>{item.get("number")}</span>
-        //             <div>关注></div>
-        //         </AuthorItem>)
-        // })
+    constructor(props){
+        super(props);
+        this.state={
+            menuList:[
+                {
+                    id:1,
+                    icon:"iconfont iconxin",
+                    text:"文章"
+                },{
+                    id:2,
+                    icon:"iconfont iconxin",
+                    text:"动态"
+                },{
+                    id:3,
+                    icon:"iconfont iconxin",
+                    text:"最新评论"
+                },{
+                    id:4,
+                    icon:"iconfont iconxin",
+                    text:"热门"
+                },
+            ]
+        }
+    }
+    getMenuList(list){
+        return list.map((item) => {
+            return <li key={item.id}>
+                <i className={`iconfont ${item.icon}`} />
+                <span>{item.text}</span>
+            </li>
+        })
     }
     render(){
-        const { authorList }  = this.props;
-        console.log(authorList);
+        const { authorList,acticleList }  = this.props;
+        const { menuList } = this.state;
         return (
             <AuthorWrapper>
                 <Main>
@@ -36,10 +63,10 @@ class Author extends Component{
                             <div className="fans">
                                 <AuthorList>
                                     {   
-                                        authorList && authorList.map((item)=>{
+                                         authorList.map((item)=>{
                                             return (<AuthorItem key={item.get("id")}>
                                                     <span>{item.get("number")}</span>
-                                                    <div>关注></div>
+                                                    <div>{item.get("word")}></div>
                                                 </AuthorItem>)
                                         })
                                         //this.add2()
@@ -52,6 +79,32 @@ class Author extends Component{
                             <button className="focus">+关注</button>
                         </Focus>
                     </Message>
+                    <Article>
+                        <Menu>
+                            <ul>
+                               {this.getMenuList(menuList)} 
+                            </ul>
+                        </Menu>
+                        <ArticleList>
+                            <ul>
+                                {
+                                    acticleList.map((item) => {
+                                        return (
+                                            <ArticleItem key={item.get("id")}>
+                                                <div className="introduce">
+                                                    <h2>{item.get("title")}</h2>
+                                                </div>
+                                                <div className="img">
+                                                    <img alt="" />
+                                                </div>
+                                            </ArticleItem>
+                                        )
+                                    })
+                                }
+                            </ul>
+                            
+                        </ArticleList>
+                    </Article>
                 </Main>
                 <Recommend>
 
@@ -66,6 +119,7 @@ class Author extends Component{
 const mapState=(state)=>{
     return {
         authorList : state.getIn(['author','authorList']),
+        acticleList : state.getIn(['author','acticleList'])
         
     }
 }
@@ -77,4 +131,5 @@ const mapDispatch=(dispatch)=>{
         }
     }
 }
+
 export default connect(mapState,mapDispatch)(Author)

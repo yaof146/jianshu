@@ -4,6 +4,7 @@ import {
     RecommendWrapper,
     RecommendItem
 } from '../style'
+
 class Recommend extends PureComponent{
     render(){
         const {list}=this.props;
@@ -21,4 +22,5 @@ class Recommend extends PureComponent{
 const mapState=(state)=>({
     list:state.getIn(["home","recommendList"])
 })
+
 export default connect(mapState,null)(Recommend)

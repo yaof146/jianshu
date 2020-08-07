@@ -9,7 +9,8 @@ const defaultState=fromJS({
     //     id:2,
     //     name:'kdn'
     // }],
-    authorList:[]
+    authorList:[],
+    acticleList:[]
 })
 
 export default (state=defaultState,action)=>{
@@ -18,7 +19,11 @@ export default (state=defaultState,action)=>{
     // }
     switch(action.type){
         case constants.ADD_LIST :
-            return state.set('authorList',action.authorList);
+            return state.merge({
+                "authorList" : action.authorList,
+                "acticleList" : action.acticleList
+            })
+            //state.set('authorList',action.authorList);
         default : 
             return state;
     }

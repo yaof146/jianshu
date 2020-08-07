@@ -10,14 +10,7 @@ import {
 
 class Writer extends PureComponent{
     render(){
-        const {list} =this.props;
-        // const pageList=[];
-        // const newList=list.toJS();
-        // for(let i=(page-1)*5;i<page*5;i++){
-        //     pageList.push(
-
-        //     )
-        // }
+        const {list} =this.props;  
         return (
             <WriterWrapper>
                 <WriteTitle>
@@ -55,15 +48,6 @@ class Writer extends PureComponent{
 }
 const mapState=(state)=>({
     list:state.getIn(["home","writeList"]),
-    //page:state.getIn(['home','page'])
 })
-// const mapDispatch=(dispatch)=>({
-//     changePage(){
-//         if(page<totalPage){
-//             dispatch(actionCreators.changePage(page+1));
-//         }else{
-//             dispatch(actionCreators.changePage(1));
-//         }
-//     }
-// })
+
 export default connect(mapState,null)(Writer)

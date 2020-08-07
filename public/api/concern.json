@@ -1,0 +1,55 @@
+{
+    "success":true,
+    "data":{
+        "concernList":[{
+            "id":1,
+            "imgURL":"",
+            "name":"摄影",
+            "number":12
+        },{
+            "id":2,
+            "imgURL":"",
+            "name":"读书",
+            "number":100
+        },{
+            "id":3,
+            "imgURL":"",
+            "name":"摄影",
+            "number":432
+        },{
+            "id":4,
+            "imgURL":"",
+            "name":"读书",
+            "number":152
+        }],
+        "recommendList":[{
+            "id":1,
+            "imgURL":"",
+            "name":"摄影",
+            "content":"《摄影》专题介绍 用文字记录美好生活 用镜头捕捉精彩瞬间 摄影，...",
+            "article":12,
+            "focus":100
+        },{
+            "id":2,
+            "imgURL":"",
+            "name":"摄影",
+            "content":"《摄影》专题介绍 用文字记录美好生活 用镜头捕捉精彩瞬间 摄影，...",
+            "article":12,
+            "focus":100
+        },{
+            "id":3,
+            "imgURL":"",
+            "name":"摄影",
+            "content":"《摄影》专题介绍 用文字记录美好生活 用镜头捕捉精彩瞬间 摄影，...",
+            "article":12,
+            "focus":100
+        },{
+            "id":4,
+            "imgURL":"",
+            "name":"摄影",
+            "content":"《摄影》专题介绍 用文字记录美好生活 用镜头捕捉精彩瞬间 摄影，...",
+            "article":12,
+            "focus":100
+        }]
+    }
+}

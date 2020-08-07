@@ -15,6 +15,7 @@ export const Recommend=styled.div`
 export const Message=styled.div`
     display:flex;
     justify-content:space-around;
+    margin-bottom:20px;
     img{
         width:80px;
         height:80px;
@@ -23,6 +24,8 @@ export const Message=styled.div`
     }
 `
 export const Name=styled.div`
+    margin-left:25px;
+    width:50%;
     h3{
         font-size:21px;
         font-weight:700;
@@ -33,13 +36,18 @@ export const Name=styled.div`
         li:first-child{
             padding-left:0;
         }
+        li:nth-child(5){
+            padding-left:0;
+        }
 `
 export const AuthorList=styled.ul`
     display:flex;
+    flex-wrap:wrap;
 `
 export const AuthorItem=styled.li`
+    min-width:66px;
     box-sizing:border-box;
-    padding:0 10px;
+    padding:5px 10px;
     border-right:1px solid #ccc;
     span{
         font-size:15px;
@@ -76,4 +84,33 @@ export const Focus=styled.div`
         font-weight:400;
         border:0;
     }
+`
+export const Article=styled.div`
+
+`
+export const Menu=styled.div`
+    ul{
+        display:flex;
+        width:70%;
+        border-bottom:1px solid #f0f0f0;
+        li{
+            width:25%;
+            text-align:center;
+            display:inline-block;
+            padding:8px 0;
+            color:#969696;
+            line-height:25px;
+            font-size:15px;
+            font-weight:700;
+        }
+    }
+`
+export const ArticleList=styled.div`
+
+`
+export const ArticleItem=styled.li`
+    box-sizing:border-box;
+    padding:15px 0 20px 0;
+    margin:0 0 15px;
+    display:flex;
 `
