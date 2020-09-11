@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const AuthorWrapper=styled.div`
     width:960px;
     margin:0 auto;
+    display:flex;
 `
 export const Main=styled.div`
     width:66.67%;
@@ -11,6 +12,7 @@ export const Main=styled.div`
 export const Recommend=styled.div`
     width:29.17%;
     background:pink;
+    margin-left:20px;
 `
 export const Message=styled.div`
     display:flex;
@@ -113,4 +115,21 @@ export const ArticleItem=styled.li`
     padding:15px 0 20px 0;
     margin:0 0 15px;
     display:flex;
+`
+export const Echart = styled.div`
+
+`
+export const Guanggao = styled.div`
+    div{
+        width:100%;
+        img{
+            width:100%;
+            height:100px;
+        }
+    }
+`
+export const OtherArticle = styled.div`
+    width:100%;
+    height:300px;
+    background:yellow;
 `

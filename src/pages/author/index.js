@@ -1,6 +1,14 @@
 import React,{ Component } from 'react'
 import {connect} from 'react-redux'
 import {actionCreators} from './store'
+
+import echarts from 'echarts/lib/echarts'
+import 'echarts/lib/component/tooltip'
+import 'echarts/lib/component/title'
+import 'echarts/lib/component/legend'
+import 'echarts/lib/chart/line'
+import ReactEcharts from 'echarts-for-react'
+
 import {
     AuthorWrapper,
     Main,
@@ -14,6 +22,9 @@ import {
     Menu,
     ArticleList,
     ArticleItem,
+    Echart,
+    Guanggao,
+    OtherArticle,
 
 }from './style'
 
@@ -49,6 +60,29 @@ class Author extends Component{
                 <span>{item.text}</span>
             </li>
         })
+    }
+    getOption = () => {
+        let option= {
+            title:{
+                text:"最近一周访问量"
+            },
+            tooltip:{},
+            xAxis:{
+                name:"时间",
+                data:["周一","周二","周三","周四","周五","周六","周日"]
+            },
+            yAxis:{
+                name:"访问量"
+            },
+            series:[
+                {
+                    name:"访问量",
+                    type:"bar",
+                    data:[302,445,723,223,1009,556,786]
+                }
+            ]
+        }
+        return option
     }
     render(){
         const { authorList,acticleList }  = this.props;
@@ -105,9 +139,17 @@ class Author extends Component{
                             
                         </ArticleList>
                     </Article>
+                    <Echart>
+                        <ReactEcharts option={this.getOption()} style={{width:'600px',height:'400px'}}></ReactEcharts>
+                    </Echart>
                 </Main>
                 <Recommend>
+                    <Guanggao>
+                        <div><img alt="" src={require("../../img/0.jpg")} /></div>
+                    </Guanggao>
+                    <OtherArticle>
 
+                    </OtherArticle>
                 </Recommend>
             </AuthorWrapper>
         )

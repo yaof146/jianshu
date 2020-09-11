@@ -11,6 +11,9 @@ const defaultState=fromJS({
     active2:false,
     active3:false,
 });
+// const defaultState = {    //原始，不使用fromJS
+//     focused:false
+// };
 export default (state=defaultState,action)=>{
     // if(action.type===constants.SEARCH_FOCUS){
     //     // return {
@@ -27,6 +30,10 @@ export default (state=defaultState,action)=>{
     switch(action.type){
         case constants.SEARCH_FOCUS : 
             return state.set("focused",true);
+            // return {                          //原始代码，不使用fromJS时
+            //     ...defaultState,
+            //     focused:true
+            // };
         case constants.SEARCH_BLUR : 
             return state.set("focused",false);
         // case constants.CHANGE_LIST : return state.set('list',action.data).set('totalPage',action.totalPage);//第一种写法

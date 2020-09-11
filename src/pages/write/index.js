@@ -7,7 +7,9 @@ class Write extends PureComponent{
         const {loginStatus}=this.props;
         if(loginStatus){
             return (
-                <div>写文章页面</div>
+                <div>写文章页面
+                    <Redirect to="/hooks/hooks3">reducer</Redirect>
+                </div>
             )
         }else{
             return <Redirect to="/login"></Redirect>
@@ -20,3 +22,4 @@ const mapState=(state)=>({
 })
 
 export default connect(mapState,null)(Write);
+

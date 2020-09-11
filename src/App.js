@@ -10,6 +10,10 @@ import Write from './pages/write'
 import DownLoad from './pages/download'
 import Author from './pages/author'
 import Concern from './pages/concern'
+import Hooks from './pages/hooks/hooks1'
+import Callback from './pages/hooks/hooks2'
+import CountReducer from './pages/hooks/hooks3'
+
 function App() {
   return (
     <Provider store={store}>
@@ -23,6 +27,9 @@ function App() {
             <Route path='/download' exact component={DownLoad}></Route>
             <Route path='/author' exact component={Author}></Route>
             <Route path='/concern' exact component={Concern}></Route>
+            <Route path='/hooks/hooks1' exact component={Hooks}></Route>
+            <Route path='/hooks/hooks2' exact component={Callback}></Route>
+            <Route path='/hooks/hooks3' exact component={CountReducer}></Route>
           </div>
         </BrowserRouter>
     </Provider>
