@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+// some changes
 export const GobangWrapper = styled.div`
 position: absolute;
   left: 0;
