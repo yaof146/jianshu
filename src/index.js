@@ -6,7 +6,8 @@ import {Styles} from './style'
 import  './statics/font_1864755_by4sgbloeq/iconfont.css'
 
 ReactDOM.render(
-  <React.StrictMode>
+  //严格模式
+  <React.StrictMode>   
     <Styles></Styles>
     <App />
   </React.StrictMode>,

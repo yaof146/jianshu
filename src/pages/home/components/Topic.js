@@ -1,5 +1,6 @@
 import React,{PureComponent} from 'react'
 import {connect} from 'react-redux'
+
 import {
     TopicWrapper,
     TopicItem,
@@ -12,11 +13,13 @@ class Topic extends PureComponent{
             <TopicWrapper>
                 {
                     this.props.list.map((item)=>{
-                        return (
-                            <TopicItem key={item.get('id')}>
-                                <img src={item.get('imgURL')} alt="1" className="topic-pic" />
-                                {item.get('title')}
-                            </TopicItem>
+                        return ( 
+                            
+                                <TopicItem>
+                                    <img src={item.get('imgURL')} alt="1" className="topic-pic" />
+                                    {item.get('title')}
+                                </TopicItem>
+                            
                         )
                     })
                 }
@@ -27,4 +30,5 @@ class Topic extends PureComponent{
 const mapState=(state)=>({
     list:state.get('home').get('topicList')
 });
+
 export default connect(mapState,null)(Topic)

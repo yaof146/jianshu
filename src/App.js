@@ -13,9 +13,13 @@ import Concern from './pages/concern'
 import Hooks from './pages/hooks/hooks1'
 import Callback from './pages/hooks/hooks2'
 import CountReducer from './pages/hooks/hooks3'
+import Games from './pages/gamePlane'
+import Gobang from './pages/gameGobang'
 
 function App() {
   return (
+    //如果一个组件的祖先被Provider包裹并传入store，那么这个组件就可以用connect将组件与Redux.store
+    //绑定，如果connect函数传入了第一个参数mapStateToProps，则组件可以根据该参数选择要传入组件的属性值。
     <Provider store={store}>
         <BrowserRouter>
           <div>
@@ -30,6 +34,8 @@ function App() {
             <Route path='/hooks/hooks1' exact component={Hooks}></Route>
             <Route path='/hooks/hooks2' exact component={Callback}></Route>
             <Route path='/hooks/hooks3' exact component={CountReducer}></Route>
+            <Route path='/gamePlane' exact component={Games}></Route>
+            <Route path='/gameGobang' exact component={Gobang}></Route>
           </div>
         </BrowserRouter>
     </Provider>

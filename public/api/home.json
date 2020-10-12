@@ -66,16 +66,24 @@
         }],
         "recommendList":[{
             "id":1,
-            "imgUrl":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595934279648&di=9361ac36f006e2fb0a41d53e1e8d007b&imgtype=0&src=http%3A%2F%2Fimg.bimg.126.net%2Fphoto%2FZo31gQdiPL4MHizPSepB2g%3D%3D%2F5401504803078118726.jpg"
+            "imgUrl":"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3992786698,3808561701&fm=26&gp=0.jpg",
+            "toUrl":"/gamePlane",
+            "game":"plane"
         },{
             "id":2,
-            "imgUrl":"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1043328089,1129791197&fm=26&gp=0.jpg"
+            "imgUrl":"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1043328089,1129791197&fm=26&gp=0.jpg",
+            "toUrl":"/gameGobang",
+            "game":"gobang"
         },{
             "id":3,
-            "imgUrl":"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3992786698,3808561701&fm=26&gp=0.jpg"
+            "imgUrl":"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3992786698,3808561701&fm=26&gp=0.jpg",
+            "toUrl":"/gamePlane",
+            "game":"plane"
         },{
             "id":4,
-            "imgUrl":"https://img.mukewang.com/user/5abe468b0001664107390741-100-100.jpg"
+            "imgUrl":"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1043328089,1129791197&fm=26&gp=0.jpg",
+            "toUrl":"/gamePlane",
+            "game":"plane"
         }],
         "mouseIn2":false,
         "writeList":[{

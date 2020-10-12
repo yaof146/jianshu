@@ -112,6 +112,11 @@ export const RecommendItem=styled.div`
     background-size:contain;
     margin-bottom:6px;
     border-radius:4px;
+    text-align:center;
+    color:blue;
+    font-size:20px;
+    font-weight:700;
+    line-height:50px;
 `
 export const QRCode=styled.div`
     width:280px;

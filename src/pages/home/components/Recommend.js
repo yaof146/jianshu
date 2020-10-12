@@ -1,5 +1,7 @@
 import React,{PureComponent} from 'react'
 import {connect} from 'react-redux'
+import {Link} from 'react-router-dom'
+
 import {
     RecommendWrapper,
     RecommendItem
@@ -12,7 +14,14 @@ class Recommend extends PureComponent{
             <RecommendWrapper>
                 {
                    list.map((item)=>{
-                       return <RecommendItem key={item.get("id")} imgUrl={item.get("imgUrl")}></RecommendItem>
+                       return (
+                        // <Link key={item.get('id')} to={'/game'}>
+                        //     <RecommendItem key={item.get("id")} imgUrl={item.get("imgUrl")}></RecommendItem>
+                        // </Link>
+                        <Link key={item.get('id')} to={item.get('toUrl')} style={{textDecoration:"none"}}>
+                            <RecommendItem key={item.get("id")} imgUrl={item.get("imgUrl")}>{item.get("game")}</RecommendItem>
+                        </Link>
+                       )
                    }) 
                 }
             </RecommendWrapper>
