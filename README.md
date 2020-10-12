@@ -1,4 +1,6 @@
-项目名称：药房This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+项目名称：自己研发
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
